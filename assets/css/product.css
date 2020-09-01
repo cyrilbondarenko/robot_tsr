@@ -1,0 +1,911 @@
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+.product .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.name > h1 {
+    color: #728491;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 7px;
+    margin-left: 120px;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin-left: 120px;
+}
+
+.info {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 35px;
+    margin-left: 120px;
+}
+
+.info > span {
+    color: #859BA5;
+    margin-right: 16px;
+}
+
+.info > span strong {
+    color: #5F6C7C;
+    font-weight: normal;
+}
+
+.info a {
+    display: flex;
+    align-items: center;
+    color: #23A9EA;
+}
+
+.info a img {
+    margin-right: 6px;
+}
+
+.columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.columns > div {
+    width: 544px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery div {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery div img {
+    width: 86px;
+    height: 86px;
+    border-radius: 4px;
+    border: 1px solid #BACDD6;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.gallery > img {
+    width: 422px;
+    height: 422px;
+    border: 1px solid #BACDD6;
+    border-radius: 4px;
+}
+
+.columns > .options {
+    background-color: #F3F8FA;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columns > .options > div {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: calc(100% - 64px);
+    border-bottom: 1px solid #D6E3E8;
+}
+
+.columns > .options .title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.columns > .options .title span {
+    font-size: 16px;
+    color: #5F6C7C;
+}
+
+.columns > .options .title a {
+    font-size: 12px;
+    color: #23A9EA;
+}
+
+.columns > .options ul {
+    display: flex;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.columns > .options ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    min-width: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    color: #859BA5;
+    border: 1px solid #859BA5;
+    border-radius: 4px;
+    background-color: white;
+    margin-right: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.columns > .options ul .active {
+    background-color: #23A9EA;
+    border-color: #23A9EA;
+    color: white;
+    font-weight: bold;
+}
+
+.columns > .options ul .unavailable {
+    position: relative;
+    background: none;
+    border-color: #BACDD6;
+    color: #BACDD6;
+    cursor: auto;
+}
+
+.columns > .options ul .unavailable::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url('../images/unavailable.svg');
+    top: -2px;
+    left: -1px;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+.value div {
+    display: flex;
+    align-items: center;
+}
+
+.value .input {
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 38px;
+    border: 1px solid #BACDD6;
+    border-radius: 4px;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.value .input .plus,
+.value .input .minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 100%;
+    color: #859BA5;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.value .input input {
+    width: 70px;
+    height: 100%;
+    border: none;
+    background-color: none;
+    text-align: center;
+    font-size: 18px;
+    color: #5F6C7C;
+    font-weight: bold;
+}
+
+.value > div span {
+    font-size: 18px;
+    color: #5F6C7C;
+}
+
+.value > span {
+    font-size: 18px;
+    color: #859BA5;
+}
+
+.qty {
+    border-bottom: none!important;
+    margin-bottom: 30px;
+}
+
+.columns > .options > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 62px);
+    height: 36px;
+    border: 1px solid #23A9EA;
+    color: #23A9EA;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.toCart {
+    height: 46px!important;
+    color: white!important;
+    background-color: #23A9EA;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none!important;
+    margin-bottom: 20px;
+}
+
+.price > span {
+    font-size: 16px;
+    color: #5F6C7C;
+}
+
+.price > a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #23A9EA;
+}
+
+.price > a img {
+    margin-right: 10px;
+}
+
+.columns > div > h1 {
+    font-size: 24px;
+    color: #859BA5;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description > span {
+    font-size: 18px;
+    color: #282B2E;
+    line-height: 28px;
+}
+
+.description > span {
+    margin-bottom: 16px;
+}
+
+.features .table td {
+    padding-bottom: 24px;
+    font-size: 18px;
+    color: #282B2E;
+}
+
+.features .table td:first-child {
+    padding-right: 32px;
+    font-size: 16px;
+    color: #859BA5;
+}
+
+.features h2 {
+    font-size: 18px;
+    color: #859BA5;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.features .chars {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: 1px solid #A0B4BE;
+    margin-bottom: 35px;
+}
+
+.features .chars tr th {
+    padding: 10px 20px;
+    border: 1px solid #A0B4BE;
+    font-weight: normal;
+    background-color: #F3F8FA;
+}
+
+.features .chars tr th span {
+    color: #859BA5;
+}
+
+.features .chars tr td {
+    padding: 10px 0;
+    border-right: 1px solid #A0B4BE;
+    border-left: 1px solid #A0B4BE;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: 736px;
+}
+
+.reviews .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #D6E3E8;
+}
+
+.reviews .title h3 {
+    color: #5F6C7C;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.reviews .title h3 strong {
+    color: #A0B4BE;
+    font-weight: normal;
+}
+
+.reviews .title div {
+    display: flex;
+    align-items: center;
+}
+
+.reviews .title div a:first-child {
+    width: 126px;
+    height: 26px;
+    border: 1px solid #23A9EA;
+    color: #23A9EA;
+    font-size: 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.reviews .title div a:last-child {
+    font-size: 12px;
+    color: #5F6C7C;
+}
+
+.reviews .review {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reviews .review img {
+    height: 79px;
+    width: 79px;
+    border: 1px solid #BACDD6;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.reviews .review .user {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.reviews .review .user span {
+    font-size: 16px;
+    color: #5F6C7C;
+    margin-right: 10px;
+}
+
+.reviews .review .user .date {
+    color: #A0B4BE;
+}
+
+.reviews .review .user .stars {
+    display: flex;
+    align-items: center;
+}
+
+.reviews .review .user .stars div {
+    width: 16px;
+    height: 16px;
+    background: url('../images/star1.svg');
+    margin-right: 3px;
+}
+
+.reviews .review .user .stars .active {
+    background: url('../images/star.svg');
+}
+
+.reviews .review > div > span {
+    line-height: 28px;
+    font-size: 18px;
+    color: #282B2E;
+}
+
+.recommend {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommend h2 {
+    color: #5F6C7C;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-bottom: 55px;
+}
+
+.products > div {
+    display: flex;
+    flex-direction: column;
+    width: 256px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.products > div:hover {
+    background-color: #F3F8FA;
+    position: relative;
+    padding: 16px;
+    left: -16px;
+    top: -16px;
+    margin-bottom: -32px;
+    margin-right: -32px;
+    box-shadow: 0px 8px 16px rgba(114, 132, 145, 0.15), 0px 0px 2px rgba(133, 155, 165, 0.2);
+}
+
+.products > div:hover .hidden {
+    display: flex;
+}
+
+.products > div > img {
+    width: 254px;
+    height: 254px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #BACDD6;
+}
+
+.products > div .category {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.products > div .category a {
+    color: #23A9EA;
+    margin-right: 12px;
+    position: relative;
+    font-size: 12px;
+}
+
+.products > div .category a::after {
+    content: '/';
+    right: -9px;
+    position: absolute;
+    color: #A0B4BE;
+}
+
+.products > div .category a:last-child::after {
+    content: '';
+}
+
+.products > div > a {
+    color: #282B2E;
+    line-height: 24px;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.products > div .shortcuts {
+    display: flex;
+}
+
+.products > div .shortcuts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    min-width: 22px;
+    border-radius: 3px;
+    border: 1px solid #BACDD6;
+    margin-right: 8px;
+}
+
+.products > div .shortcuts a img {
+    height: 18px;
+}
+
+.products > div .shortcuts a span {
+    color: #23A9EA;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.products > div .hidden .options {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+
+.products > div .hidden .options > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-bottom: 13px;
+}
+
+.products > div .hidden .options > div > span {
+    font-size: 14px;
+    color: #859BA5;
+    margin-bottom: 5px;
+}
+
+.products > div .hidden .options > div .list {
+    position: relative;
+}
+
+.products > div .hidden .options > div .list span {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 45px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #23A9EA;
+    font-size: 16px;
+    color: #5F6C7C;
+    cursor: pointer;
+}
+
+.products > div .hidden .options > div .list > span::after {
+    right: 10px;
+    top: 14px;
+    position: absolute;
+    content: '';
+    width: 14px;
+    height: 8px;
+    background: url('../images/option_arrow.svg');
+}
+
+.products > div .hidden .options > div .value {
+    display: flex;
+    width: 120px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #23A9EA;
+    background-color: white;
+}
+
+.products > div .hidden .options > div .value .plus, 
+.products > div .hidden .options > div .value .minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 100%;
+    color: #859BA5;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.products > div .hidden .options > div .value input {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    color: #5F6C7C;
+}
+
+.products > div .hidden .options > div .list div {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% - 2px);
+}
+
+.products > div .hidden .options > div .list div span {
+    border-radius: 0;
+    border-bottom: 1px solid #23A9EA;
+    border-top: 0;
+    
+}
+
+.products > div .hidden .options > div .list div span:first-child {
+    border-top: 1px solid #23A9EA;
+}
+
+.products > div .hidden .options > div .list div span:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.products > div .hidden a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background-color: #23A9EA;
+    margin-bottom: 13px;
+}
+
+.products > div .hidden span {
+    font-size: 16px;
+    color: #5F6C7C;
+}
+
+.products > div .hidden {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 32px);
+    padding: 16px;
+    padding-top: 0px;
+    background-color: #F3F8FA;
+    border-radius: 0 0 4px 4px;
+}
+
+.popup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(95, 108, 124, 0.4);
+    z-index: 10;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 40px;
+    width: 464px;
+    border-radius: 4px;
+    background-color: #F3F8FA;
+    box-shadow: 0px 8px 16px rgba(114, 132, 145, 0.15), 0px 0px 2px rgba(133, 155, 165, 0.2);
+}
+
+.popup form .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.popup form .title {
+    color: #5F6C7C;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.popup form .desc {
+    display: flex;
+    color: #5F6C7C;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.popup form label {
+    color: #859BA5;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.popup form input {
+    width: calc(100% - 17px);
+    height: 46px;
+    border: 1px solid #BACDD6;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: white;
+    padding-left: 15px;
+    font-size: 24px;
+    color: #5F6C7C;
+}
+
+.popup form button {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    background-color: #23A9EA;
+    border: none;
+    cursor: pointer;
+}
+
+.adaptive-table {
+    overflow-y: auto;
+}
+
+@media (max-width: 1120px) {
+    nav {
+        margin-left: 0;
+    }
+    .name > h1 {
+        margin-left: 0;
+    }
+    .info {
+        margin-left: 0;
+    }
+    .columns > div {
+        width: 48%;
+    }
+    .gallery > img {
+        width: 300px;
+        height: 300px;
+    }
+    .products {
+        justify-content: start;
+    }
+    .products > div {
+        margin-right: 32px;
+    }
+    .products > div:hover {
+        background-color: #F3F8FA;
+        position: relative;
+        padding: 16px;
+        left: -16px;
+        top: -16px;
+        margin-bottom: -32px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 840px) {
+    .columns {
+        flex-direction: column;
+    }
+    .columns > div {
+        width: 100%;
+    }
+    .gallery {
+        justify-content: flex-start;
+        margin-bottom: 25px;
+    }
+    .gallery > img {
+        width: 400px;
+        height: 400px;
+        margin-left: 32px;
+    }
+    .reviews {
+        width: 100%;
+    }
+    .description > span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 570px) {
+    .gallery > img {
+        width: 100%;
+        height: auto;
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .gallery div {
+        order: 2;
+        flex-direction: row;
+    }
+    .gallery div img {
+        margin-right: 20px;
+        margin-bottom: 0;
+        width: 50px;
+        height: auto;
+    }
+    .value .input input {
+        width: 40px;
+    }
+    .value .input {
+        width: 100px;
+    }
+    .value > span {
+        font-size: 12px;
+        text-align: right;
+    }
+    .price > span {
+        font-size: 12px;
+    }
+    .price > a {
+        justify-content: flex-end;
+        text-align: right;
+        font-size: 12px;
+    }
+    .price > a span {
+        display: flex;
+    }
+    .reviews .title {
+        flex-direction: column;
+    }
+    .reviews .title h3 {
+        margin-bottom: 10px;
+    }
+    .reviews .review .user {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .reviews .review .user .date {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .reviews .review > div > span {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .reviews .title div a:last-child {
+        text-align: right;
+    }
+    .features .table td {
+        font-size: 14px;
+    }
+    .popup form .desc {
+        font-size: 14px;
+    }
+    .popup form input {
+        height: 36px;
+    }
+    .products {
+        justify-content: center;
+    }
+    .columns > .options > div {
+        padding-left: 16px;
+    padding-right: 16px;
+    width: calc(100% - 32px);
+    }
+    .columns > .options > a {
+        width: calc(100% - 34px);
+    }
+}
